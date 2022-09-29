@@ -13,6 +13,7 @@ function populateForm() {
   const selectElement = document.getElementById('items');
   for (let i in Product.allProducts) {
     let option = document.createElement('option');
+    option.value = Product.allProducts[i].name;
 	  option.textContent = Product.allProducts[i].name;
 	  selectElement.appendChild(option);
   }
