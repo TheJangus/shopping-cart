@@ -25,7 +25,7 @@ function clearCart() {}
 function showCart() {
 
   // TODO: Find the table body
-
+  let tableLocation = document.getElementById('cart').children[1];
   // TODO: Iterate over the items in the cart
   // TODO: Create a TR
   // TODO: Create a TD for the delete link, quantity,  and the item
@@ -36,9 +36,12 @@ function showCart() {
 function removeItemFromCart(event) {
 
   // TODO: When a delete link is clicked, use cart.removeItem to remove the correct item
+  Cart.splice(event.target.dataset.id, 1);
+  console.log(Cart);
   // TODO: Save the cart back to local storage
+  localStorage.setItem('cart', JSON.stringify(Cart));
   // TODO: Re-draw the cart table
-
+  renderCart();
 }
 
 // This will initialize the page and draw the cart on screen
