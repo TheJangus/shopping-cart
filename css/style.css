@@ -1,1 +1,99 @@
 /* TODO: Make it awesome */
+/* color pallette: 
+
+#FCDEBE Bisque clay
+#D4D2A5 pale green
+#928779 middle grey
+#5E5768 pale purple
+#3A445D pale blue
+*/
+
+
+
+/* The full header in general */
+header {
+  background-color: #D4D2A5;
+  padding-bottom: 1%;
+}
+
+/* "Odd Duck Products Online Store" */
+body header h1 {
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  padding: 4px;
+}
+
+/* ??? */
+nav {
+  color: #3A445D;
+}
+
+
+
+header nav ul {
+margin-bottom: 0%;
+}
+
+
+
+/* "Home" and "Cart" buttons themselves */
+header nav ul li {
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 900;
+  background-color: #3A445D;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 2%;
+  border-radius: 50px;
+}
+
+/* The color of links. (used for button's text) */
+a{
+  color:white;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+
+/* "Shop Our Catalog" */
+section header h1 {
+  background-color: #5E5768;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: larger;
+  padding: 10px;
+}
+
+
+
+/* ©2018 Code Fellows 201d33 */
+footer {
+  position: fixed;
+  background-color: #5E5768;
+  color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  font-size: larger;
+}
