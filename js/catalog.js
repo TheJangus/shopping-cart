@@ -3,8 +3,14 @@
 'use strict';
 
 // Set up an empty cart for use on this page.
-const cart = new Cart([]);
-
+//const cart = new Cart([]);
+const cart = localStorage.cart ? new Cart (JSON.parse(localstorage.cart)) : new Cart([]);
+// if(cart.items){
+//   cart.updateCounter();
+//   for (let i=0; i < cart.items.length; i++){
+//     updateCartPreview(cart.items[i]);
+//   }
+// }
 // On screen load, we call this method to put all of the product options
 // (the things in the Product.allProducts array) into the drop down list.
 function populateForm() {
@@ -59,7 +65,7 @@ function updateCounter() {
   }
 }
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
-function updateCartPreview() {
+function updateCartPreview(item) {
   // TODO: Get the item and quantity from the form
   let selectElement = document.getElementById('items');
   let quantityElement = document.getElementById('quantity');

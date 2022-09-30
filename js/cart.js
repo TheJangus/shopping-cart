@@ -8,7 +8,16 @@ let cart;
 
 function loadCart() {
   const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-  cart = new Cart(cartItems);
+ // cart = new Cart(cartItems);
+
+ //trying this randomness
+ let cartItemsArray = new Array();
+  for (let i = 0; i <cartItems.items.length; i++) {
+    cartItemsArray.push(new CartItem(
+      cartItems.items[i].product,
+      cartItems.items[i].quantity));
+  }
+  cart = new Cart(cartItemsArray);
 }
 
 // Make magic happen --- re-pull the Cart, clear out the screen and re-draw it
